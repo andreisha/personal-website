@@ -1,0 +1,502 @@
+/* General */
+@media only screen and (max-width: 1000px) {
+  .education, .experiences, .projects, .interests, .technologies, .participations, .moreinfo_appearing, .details {
+    visibility: hidden;
+  }
+  .moreinfo, .moreinfo_appearing {
+    height: 0;
+    width: 0;
+    padding: 0px 0px;
+    margin: 0px 0px;
+  }
+}
+
+body {
+	background-color: #232323;
+	margin : 0;
+	font-family: "Montserrat", "Avenir";
+	position: 100%;
+}
+
+h1 {
+	text-align: center;
+	line-height: 1.1;
+	color: white;
+	background-color: #ff8566;
+	font-family: "Montserrat", "Avenir";
+	text-transform: uppercase;
+	font-weight: normal;
+	margin : 0;
+	padding: 10px 0;
+	background-color: #ff8566;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: #ff8566;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background: #ff8566;
+}
+
+#logo {
+	width: 3%;
+	padding: 10px 10px;
+}
+
+/* Stripe */
+
+#stripe {
+	background: white;
+	height: 30%;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	background-color: #ff8566;
+	height: 30px;
+	color : white;
+	border : none;
+}
+
+#languages {
+	display: inline-block;
+	width: 20%;
+	height: 20%
+}
+
+.lang {
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	color: transparent;
+	padding: 5px 5px;
+	margin: 0 5px;
+}
+
+.fr {
+	background-image: url("img/languages/france.png");
+}
+
+.es {
+	background-image: url("img/languages/spain.png");
+}
+
+.uk {
+	background-image: url("img/languages/uk.png");
+}
+
+
+.br {
+	background-image: url("img/languages/brazil.png");
+}
+
+.fr:hover, .es:hover, .uk:hover, .br:hover {
+	background-color: #ff8566;
+}
+
+/* Photo and text */
+
+#container {
+	padding-top: 10px;
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+#photo {
+	background-size: cover;
+	width: 30%;
+	margin: 20px auto;
+	float: center;
+	padding-bottom: 30%;
+	border-radius: 50%;
+	transition: background 1s;
+}
+
+#text {
+	color: white;
+	margin: 20px auto;
+	text-align: center;
+	transition: all 2s;
+}
+
+/* More info - general */
+
+.moreinfo {
+	height: 30%;
+	text-align: center;
+	color: black;
+}
+
+.moreinfo_hidden {
+	height: 0%;
+}
+
+
+.moreinfo_appearing {
+	background-color: #232323;
+	color: #232323;
+}
+
+.content {
+	display: inline-block;
+	background-color: #232323;
+	color: #232323;
+}
+
+.content_appearing {
+	display: inline-block;
+	background-color: white;
+	width: 100%;
+	padding-left: 50px;
+}
+
+.details {
+	height: 150px;
+	padding : 30px 50px;
+	text-align: left;
+	display: center;
+	color: white;
+	background-color: #ff8566;
+}
+
+.details_short {
+	height: 100px;
+	padding : 0 50px;
+	text-align: left;
+	display: center;
+	color: white;
+	background-color: #ff8566;
+}
+
+.details_long {
+	height: 400px;
+	padding : 0 50px;
+	text-align: left;
+	display: center;
+	color: white;
+	background-color: #ff8566;
+}
+
+/* More info - education */
+
+.moreinfo_appearing_education_active {
+	background-color: white;
+	color: white;
+	padding-top: 10px; 
+	align-content: left;
+	overflow: auto;
+}
+
+.cs_appearing, .puc_appearing, .lfb_appearing{
+	background-position: center center;
+	background-size: cover;
+	width: 20%;
+	margin: 1.5%;
+	float: left;
+	border-radius: 20%;
+	padding: 0 50px;
+	transition: background 1s;
+}
+
+.cs_img, .puc_img, .lfb_img {
+	width: 250px;
+	height: 150px;
+	display: center;
+	transition: all 0.2s;
+}
+
+.cs_img_disappearing, .puc_img_disappearing, .lfb_img_disappearing {
+	width: 0;
+	height: 0;
+}
+
+.cs_txt, .puc_txt, .lfb_txt {
+	float: left;
+	text-align: center;
+}
+
+/* More info - experiences */
+
+
+.images{
+	background-position: center center;
+	background-size: cover;
+	width: 12%;
+	margin: 1.5%;
+	float: left;
+	border-radius: 20%;
+	padding: 50px 50px;
+	transition: background 1s;
+}
+
+.alku_appearing {
+	background-image: url("img/experiences/logo-alku.png");
+}
+
+.numberly_appearing {
+	background-image: url("img/experiences/logo-numberly.png");
+}
+
+.pdr_appearing {
+	background-image: url("img/experiences/logo-pdr.png");
+}
+
+.pucInfo_appearing {
+	background-image: url("img/experiences/logo-dpto-info-puc.png");
+}
+
+.alku_txt, .numberly_txt, .pdr_txt, .puc-info_txt {
+	float: left;
+	text-align: center;
+	color: transparent;
+}
+
+.alku_txt:hover, .numberly_txt:hover, .pdr_txt:hover, .puc-info_txt:hover {
+	width: 125%;
+	margin: 1%;
+	float: left;
+	text-align: center;
+	color: white;
+	background-color: #ff8566;
+	border-radius: 15px 35px;
+	padding: 10px 2px;
+}
+
+/* More info - projects */
+
+.images_projects {
+	background-position: center center;
+	background-size: cover;
+	background-color: #ff8566;
+	width: 100px;
+	height: 50px;
+	margin: 1.5%;
+	float: left;
+	border-radius: 15px 35px;
+	border: 2px solid #ff8566;
+	padding: 40px 50px;
+	transition: background 1s;
+	text-align: center;
+	vertical-align: center;
+	color: white;
+	display: inline-block;
+}
+
+/* More info - participations */
+
+.images_participations {
+	background-position: center center;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	margin: 40px 60px;
+	float: left;
+	border: 2px solid #ff8566;
+	padding: 40px 50px;
+	padding-left: 50px;
+	transition: background 0.2s;
+	color: #ff8566;
+	display: inline-block;
+}
+
+.sbbd_appearing {
+	background-image: url("img/participations/sbbd1.png");
+}
+
+.maratonaVTEX_appearing {
+	background-image: url("img/participations/maratonaVTEX_2.jpg");
+}
+
+.maratonaSQL_appearing {
+	background-image: url("img/participations/maratonaSQL.png");
+}
+
+/* More info - technologies */
+
+.images_technologies {
+	background-position: center center;
+	background-size: cover;
+	width: 100px;
+	height: 30px;
+	margin: 40px 50px;
+	float: left;
+	border-radius: 50px;
+	border: 2px dashed #ff8566;
+	padding: 40px 40px;
+	padding-left: 50px;
+	transition: background 1s;
+	text-align: center;
+	vertical-align: center;
+	color: #ff8566;
+	display: inline-block;
+}
+
+.icons_appearing {
+	background-position: center center;
+	background-size: cover;
+	width: 100px;
+	height: 50px;
+	margin: 40px 50px;
+	float: left;
+	border-radius: 50px;
+	padding: 40px 40px;
+	padding-left: 50px;
+	transition: all 1s;
+	text-align: center;
+	vertical-align: center;
+	color: #ff8566;
+	display: inline-block;
+}
+
+.icons_appearing_3 {
+	background-position: center center;
+	background-size: cover;
+	width: 100px;
+	height: 50px;
+	margin: 40px 60px;
+	float: left;
+	border-radius: 50px;
+	padding: 40px 70px;
+	padding-left: 70px;
+	transition: all 1s;
+	text-align: center;
+	vertical-align: center;
+	color: #ff8566;
+	display: inline-block;
+}
+
+.python_appearing {
+	background-image: url("img/technologies/languages/python.png");
+}
+
+.java_appearing {
+	background-image: url("img/technologies/languages/java.png");
+}
+
+.c_appearing {
+	background-image: url("img/technologies/languages/c.png");
+}
+
+.php_appearing {
+	background-image: url("img/technologies/languages/php.png");
+}
+
+.web_appearing {
+	background-image: url("img/technologies/languages/htmlcssjs.png");
+}
+
+.sql_appearing {
+	background-image: url("img/technologies/languages/sql.png");
+}
+
+.sparql_appearing {
+	background-image: url("img/technologies/languages/sparql.png");
+}
+
+.postgres_appearing {
+	background-image: url("img/technologies/databases/postgres.png");
+}
+
+.mysql_appearing {
+	background-image: url("img/technologies/databases/mysql.png");
+}
+
+.cassandra_appearing {
+	background-image: url("img/technologies/databases/cassandra.jpg");
+}
+
+.allegro_appearing {
+	background-image: url("img/technologies/databases/allegro.png");
+}
+
+.adobe_appearing {
+	background-image: url("img/technologies/software/adobe.png");
+}
+
+.sugar_appearing {
+	background-image: url("img/technologies/software/sugar.png");
+}
+
+.excel_appearing {
+	background-image: url("img/technologies/software/excel.png");
+}
+
+.github_appearing {
+	background-image: url("img/technologies/others/github.jpg");
+}
+
+.linux_appearing {
+	background-image: url("img/technologies/others/linux.png");
+}
+
+.kafka_appearing {
+	background-image: url("img/technologies/others/kafka.png");
+}
+
+/* More info - interests / Hobbies */
+
+.images_interests{
+	background-position: center center;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	margin: 20px 40px;
+	float: left;
+	border-radius: 50%;
+	padding: 40px 50px;
+	padding-left: 50px;
+	transition: background 0.2s;
+	color: #ff8566;
+	display: inline-block;
+}
+
+.social_appearing {
+	background-image: url("img/interests/volunteer.png");
+}
+
+.running_appearing {
+	background-image: url("img/interests/run.png");
+}
+
+.technology_appearing {
+	background-image: url("img/interests/tech.png");
+}
+
+.traveling_appearing {
+	background-image: url("img/interests/travel.png");
+}
+
+/* Footer */
+
+#footer {
+	position: fixed;
+	bottom : 0;
+	width: 100%;
+	padding-top: 1px;
+	background-color: white;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+
+}
+
+.spaceToFooter {
+	background-color: #232323;
+	height: 50px;
+}
+
