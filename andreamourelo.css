@@ -136,6 +136,16 @@ button:hover {
 
 /* More info - general */
 
+.hover {
+	width: 100%;
+	float: left;
+	text-align: center;
+	color: #ff8566;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
 .moreinfo {
 	height: 30%;
 	text-align: center;
@@ -167,7 +177,7 @@ button:hover {
 
 .details {
 	height: 150px;
-	padding : 30px 50px;
+	padding : 30px 70px;
 	text-align: left;
 	display: center;
 	color: white;
@@ -197,7 +207,6 @@ button:hover {
 .moreinfo_appearing_education_active {
 	background-color: white;
 	color: white;
-	padding-top: 10px; 
 	align-content: left;
 	overflow: auto;
 }
@@ -231,7 +240,6 @@ button:hover {
 }
 
 /* More info - experiences */
-
 
 .images{
 	background-position: center center;
@@ -297,42 +305,13 @@ button:hover {
 	display: inline-block;
 }
 
-/* More info - participations */
-
-.images_participations {
-	background-position: center center;
-	background-size: cover;
-	width: 150px;
-	height: 150px;
-	margin: 40px 60px;
-	float: left;
-	border: 2px solid #ff8566;
-	padding: 40px 50px;
-	padding-left: 50px;
-	transition: background 0.2s;
-	color: #ff8566;
-	display: inline-block;
-}
-
-.sbbd_appearing {
-	background-image: url("img/participations/sbbd1.png");
-}
-
-.maratonaVTEX_appearing {
-	background-image: url("img/participations/maratonaVTEX_2.jpg");
-}
-
-.maratonaSQL_appearing {
-	background-image: url("img/participations/maratonaSQL.png");
-}
-
 /* More info - technologies */
 
 .images_technologies {
 	background-position: center center;
 	background-size: cover;
 	width: 100px;
-	height: 30px;
+	height: 50px;
 	margin: 40px 50px;
 	float: left;
 	border-radius: 50px;
