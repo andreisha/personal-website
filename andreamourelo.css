@@ -1,13 +1,14 @@
 /* General */
 @media only screen and (max-width: 1000px) {
-  .education, .experiences, .projects, .interests, .technologies, .participations, .moreinfo_appearing, .details {
+  .education, .experiences, .projects, .technologies, .interests, .moreinfo, .moreinfo_appearing, .details_start, .details, .details_short, .details_long, .content {
     visibility: hidden;
   }
-  .moreinfo, .moreinfo_appearing {
-    height: 0;
-    width: 0;
+  .moreinfo, .moreinfo_appearing, .details_start, .details, .details_long, .details_short {
+    height: 0px;
+    width: 0px;
     padding: 0px 0px;
     margin: 0px 0px;
+    background-color: #232323;
   }
 }
 
@@ -175,8 +176,12 @@ button:hover {
 	padding-left: 50px;
 }
 
+.details_start {
+	background-color: #ff8566;
+}
+
 .details {
-	height: 150px;
+	height: 200px;
 	padding : 30px 70px;
 	text-align: left;
 	display: center;
